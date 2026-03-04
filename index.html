@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segredos da Feijoada Artesanal</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#1c1917',
+                            primary: '#ea580c',
+                            primaryDark: '#c2410c',
+                            light: '#fafaf9',
+                            accent: '#fbbf24',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #ea580c 0%, #fbbf24 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-brand-light text-stone-800 antialiased selection:bg-brand-primary selection:text-white">
+
+    <!-- BLOCO 1: HEADER -->
+    <header class="relative pt-24 pb-20 lg:pt-32 lg:pb-32 overflow-hidden bg-brand-dark text-white">
+        <div
+            class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent">
+        </div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+
+            <h2 class="text-2xl font-bold font-serif text-brand-primary mb-10 tracking-wider uppercase">Feijoada
+                Artesanal</h2>
+
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold font-serif leading-tight mb-6">
+                Descubra como preparar uma feijoada artesanal com sabor inconfundível <br class="hidden lg:block" />
+                <span class="gradient-text italic">— direto da sua cozinha</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-stone-300 max-w-3xl mx-auto mb-12">
+                Aprenda o passo a passo para produzir uma feijoada 100% caseira e autoral, mesmo sem equipamentos
+                profissionais.
+            </p>
+
+            <!-- VÍDEO -->
+            <div
+                class="max-w-4xl mx-auto bg-black rounded-2xl overflow-hidden shadow-2xl aspect-video relative flex items-center justify-center mb-12 border border-white/10 group cursor-pointer">
+                <div class="absolute inset-0 bg-stone-900/80"></div>
+                <!-- Placeholder frame for video -->
+                <i
+                    class="fas fa-play text-5xl text-brand-primary bg-white/10 p-8 rounded-full z-10 group-hover:scale-110 transition-transform shadow-lg backdrop-blur-sm"></i>
+                <p class="absolute bottom-4 text-stone-400 text-sm font-medium tracking-wide">ASSISTA AO VÍDEO</p>
+            </div>
+
+            <a href="#oferta"
+                class="inline-block bg-gradient-to-r from-brand-primary to-orange-500 hover:from-orange-500 hover:to-orange-400 text-white font-bold text-lg md:text-xl px-10 py-5 rounded-full shadow-xl shadow-brand-primary/30 transform hover:-translate-y-1 transition-all">
+                Quero aprender os Segredos da Feijoada Artesanal
+            </a>
+        </div>
+    </header>
+
+    <!-- BLOCO 2: OPORTUNIDADE -->
+    <section class="py-24 bg-white reveal">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold font-serif mb-8 text-center text-brand-dark max-w-3xl mx-auto">
+                Cozinhar uma feijoada artesanal incrível é totalmente possível — <span
+                    class="text-brand-primary italic">até em apartamento</span>
+            </h2>
+            <div class="text-lg text-stone-600 text-center max-w-4xl mx-auto space-y-6">
+                <p>Muita gente acredita que precisa de equipamentos caros, cozinha industrial ou técnicas avançadas, mas
+                    <strong>isso não é verdade</strong>.</p>
+                <p>Com o método certo, <em>qualquer pessoa</em> pode criar uma feijoada marcante usando apenas a cozinha
+                    que já tem em casa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 3: AUTORIDADE / DEMONSTRAÇÃO -->
+    <section class="py-24 bg-stone-50 reveal border-y border-stone-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <p class="text-lg text-stone-600 mb-6 font-medium">Com mais de 15 anos de experiência na gastronomia e
+                    ex-dono de 3 restaurantes, Bruno desenvolveu um processo exclusivo que permite:</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-stone-100">
+                    <i class="fas fa-fire text-3xl text-brand-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Defumar carnes</h3>
+                    <p class="text-stone-600">Em cozinha residencial, sem sujeira ou complicação.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-stone-100">
+                    <i class="fas fa-hotdog text-3xl text-brand-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Produzir linguiças</h3>
+                    <p class="text-stone-600">Artesanais, perfeitamente temperadas e sem máquinas profissionais.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-stone-100">
+                    <i class="fas fa-seedling text-3xl text-brand-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Criar temperos</h3>
+                    <p class="text-stone-600">E bases de sabor caseiras para aquele toque autêntico.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-stone-100 lg:col-start-2">
+                    <i class="fas fa-bowl-rice text-3xl text-brand-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Montar feijoada autoral</h3>
+                    <p class="text-stone-600">Do zero absoluto com os acompanhamentos ideais.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-stone-100">
+                    <i class="fas fa-money-bill-wave text-3xl text-brand-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Transformar em renda</h3>
+                    <p class="text-stone-600">Gerando renda extra através da venda de algo maravilhoso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 4: O MÉTODO -->
+    <section class="py-24 bg-brand-dark text-white reveal">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <img src="images/feijoada.png" alt="O Método"
+                        class="w-full max-w-lg mx-auto drop-shadow-2xl rounded-2xl object-cover">
+
+                </div>
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-bold font-serif mb-6 leading-tight">
+                        O método que transforma qualquer cozinha em um <span
+                            class="text-brand-primary italic">laboratório de sabores artesanais</span>
+                    </h2>
+                    <p class="text-xl text-stone-300 border-l-4 border-brand-primary pl-4 mb-8">Você vai aprender:</p>
+
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start"><i class="fas fa-check text-brand-primary mt-1 mr-4"></i> <span
+                                class="text-stone-200">Técnicas simples para defumar carnes sem defumador</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-brand-primary mt-1 mr-4"></i> <span
+                                class="text-stone-200">Como preparar linguiças artesanais</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-brand-primary mt-1 mr-4"></i> <span
+                                class="text-stone-200">Bases de sabor e temperos profissionais</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-brand-primary mt-1 mr-4"></i> <span
+                                class="text-stone-200">Montagem completa da feijoada autoral</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-brand-primary mt-1 mr-4"></i> <span
+                                class="text-stone-200">Como vender kits e gerar renda extra</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 6: PARA QUEM É -->
+    <section class="py-20 bg-white reveal">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold font-serif mb-12 text-brand-dark">Este material é para quem:</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-stone-100 text-stone-800 px-6 py-3 rounded-full font-medium shadow-sm"><i
+                        class="fas fa-heart text-brand-primary mr-2"></i> Ama cozinhar</span>
+                <span class="bg-stone-100 text-stone-800 px-6 py-3 rounded-full font-medium shadow-sm"><i
+                        class="fas fa-store text-brand-primary mr-2"></i> Quer empreender sem sair de casa</span>
+                <span class="bg-stone-100 text-stone-800 px-6 py-3 rounded-full font-medium shadow-sm"><i
+                        class="fas fa-wallet text-brand-primary mr-2"></i> Busca renda extra</span>
+                <span class="bg-stone-100 text-stone-800 px-6 py-3 rounded-full font-medium shadow-sm"><i
+                        class="fas fa-earth-americas text-brand-primary mr-2"></i> Mora fora e sente falta da feijoada
+                    raiz</span>
+                <span class="bg-stone-100 text-stone-800 px-6 py-3 rounded-full font-medium shadow-sm"><i
+                        class="fas fa-leaf text-brand-primary mr-2"></i> Quer controlar ingredientes por
+                    restrições</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 9: COMPARATIVO -->
+    <section class="py-20 bg-stone-50 reveal">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-stone-200">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="p-8 border-b md:border-b-0 md:border-r border-stone-200">
+                        <h3 class="text-center font-bold text-stone-400 uppercase tracking-widest mb-8">Sem o Ebook</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center text-stone-500"><i
+                                    class="fas fa-times text-red-400 mr-3 w-5"></i> Sabor industrializado</li>
+                            <li class="flex items-center text-stone-500"><i
+                                    class="fas fa-times text-red-400 mr-3 w-5"></i> Nenhuma oportunidade</li>
+                            <li class="flex items-center text-stone-500"><i
+                                    class="fas fa-times text-red-400 mr-3 w-5"></i> Conservantes e aditivos</li>
+                            <li class="flex items-center text-stone-500"><i
+                                    class="fas fa-times text-red-400 mr-3 w-5"></i> Travado sem equipamento</li>
+                        </ul>
+                    </div>
+                    <div class="p-8 bg-brand-50 relative">
+                        <div class="absolute inset-0 bg-brand-primary opacity-5"></div>
+                        <h3
+                            class="text-center font-bold text-brand-primaryDark uppercase tracking-widest mb-8 relative z-10">
+                            Com o Ebook</h3>
+                        <ul class="space-y-4 relative z-10">
+                            <li class="flex items-center text-brand-dark font-medium"><i
+                                    class="fas fa-check text-brand-primary mr-3 w-5"></i> Feijoada 100% artesanal</li>
+                            <li class="flex items-center text-brand-dark font-medium"><i
+                                    class="fas fa-check text-brand-primary mr-3 w-5"></i> Renda extra</li>
+                            <li class="flex items-center text-brand-dark font-medium"><i
+                                    class="fas fa-check text-brand-primary mr-3 w-5"></i> Controle de ingredientes</li>
+                            <li class="flex items-center text-brand-dark font-medium"><i
+                                    class="fas fa-check text-brand-primary mr-3 w-5"></i> Cozinha comum</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 5: OFERTA -->
+    <section id="oferta" class="py-24 bg-white scroll-mt-20 reveal">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+                class="border-2 border-brand-primary rounded-3xl p-8 md:p-12 text-center shadow-[0_20px_50px_rgba(234,88,12,0.1)]">
+                <h2 class="text-2xl font-bold uppercase tracking-widest text-brand-primary mb-2">O QUE VOCÊ VAI RECEBER
+                </h2>
+                <h3 class="text-4xl font-serif font-bold text-brand-dark mb-8">Segredos da Feijoada Artesanal</h3>
+
+                <div class="max-w-xl mx-auto text-left space-y-4 mb-10">
+                    <p class="flex items-center text-lg"><i class="fas fa-arrow-right text-brand-primary mr-3"></i>
+                        <span>Ebook completo com todo o passo a passo</span></p>
+                    <p class="flex items-center text-lg"><i class="fas fa-arrow-right text-brand-primary mr-3"></i>
+                        <span>Receitas exclusivas de carnes, linguiças e temperos</span></p>
+                    <p class="flex items-center text-lg"><i class="fas fa-arrow-right text-brand-primary mr-3"></i>
+                        <span>Técnicas profissionais adaptadas para cozinha comum</span></p>
+                    <p
+                        class="flex items-center text-lg p-3 bg-brand-50 rounded-xl text-brand-primaryDark font-medium border border-brand-100">
+                        <i class="fas fa-star text-brand-primary mr-3"></i> <span>Bônus: Planilha de custos e
+                            vendas</span></p>
+                </div>
+
+                <div class="mb-8">
+                    <p class="text-stone-500 line-through text-lg">Preço original: R$ 197,00</p>
+                    <p class="text-5xl font-bold text-brand-dark">R$ 39,90</p>
+                </div>
+
+                <a href="https://pay.hotmart.com/Y103286666E?bid=1771977498499"
+                    class="inline-block w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white font-bold text-2xl px-12 py-5 rounded-full shadow-[0_10px_25px_rgba(34,197,94,0.3)] transform hover:scale-105 transition-transform mb-4">
+                    Quero garantir meu acesso
+                </a>
+                <p class="text-sm text-stone-400"><i class="fas fa-lock mr-1 text-xs"></i> Compra Segura e Garantida</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 10: SOBRE O AUTOR -->
+    <section class="py-24 bg-brand-dark text-white reveal border-t border-stone-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <img src="images/bruno_cavalcanti.jpg" alt="Bruno"
+                class="rounded-2xl shadow-xl w-full max-w-sm mx-auto object-cover aspect-square">
+
+            <div>
+                <span class="text-brand-primary text-sm font-bold uppercase tracking-widest mb-2 block">SOBRE O
+                    AUTOR</span>
+                <h2 class="text-4xl font-serif font-bold mb-6">Bruno</h2>
+                <h3 class="text-xl text-brand-accent mb-6 font-medium">Gastronomia prática e saborosa</h3>
+                <p class="text-stone-300 mb-4 text-lg">Cozinheiro há mais de 15 anos, ex-dono de 3 restaurantes e
+                    criador de cardápios completos.</p>
+                <p class="text-stone-300 text-lg">Hoje ensina receitas práticas nas redes sociais com uma abordagem
+                    simples e acessível.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 7 & 8: OBJEÇÕES E FAQ -->
+    <section class="py-24 bg-white reveal">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold font-serif text-center mb-12 text-brand-dark">Dúvidas Frequentes
+            </h2>
+
+            <div class="space-y-6">
+                <div class="bg-stone-50 p-6 rounded-2xl border border-stone-100">
+                    <h3 class="font-bold text-lg mb-2 text-brand-dark flex items-center"><i
+                            class="fas fa-question-circle text-brand-primary mr-3"></i> O método funciona em
+                        apartamento?</h3>
+                    <p class="text-stone-600">Sim. O método foi testado e validado em cozinha residencial.</p>
+                </div>
+                <div class="bg-stone-50 p-6 rounded-2xl border border-stone-100">
+                    <h3 class="font-bold text-lg mb-2 text-brand-dark flex items-center"><i
+                            class="fas fa-question-circle text-brand-primary mr-3"></i> Preciso de equipamentos caros?
+                    </h3>
+                    <p class="text-stone-600">Não. Você aprenderá alternativas totalmente acessíveis usando o que já
+                        tem.</p>
+                </div>
+                <div class="bg-stone-50 p-6 rounded-2xl border border-stone-100">
+                    <h3 class="font-bold text-lg mb-2 text-brand-dark flex items-center"><i
+                            class="fas fa-question-circle text-brand-primary mr-3"></i> Os produtos são saudáveis?</h3>
+                    <p class="text-stone-600">Sim. Você tem controle total: sem conservantes ou aditivos químicos.</p>
+                </div>
+                <div class="bg-stone-50 p-6 rounded-2xl border border-stone-100">
+                    <h3 class="font-bold text-lg mb-2 text-brand-dark flex items-center"><i
+                            class="fas fa-question-circle text-brand-primary mr-3"></i> Dá para ganhar dinheiro com
+                        isso?</h3>
+                    <p class="text-stone-600">Sim, kits de feijoada artesanal têm enorme demanda. E você pode começar
+                        sem CNPJ de forma informal.</p>
+                </div>
+                <div class="bg-stone-50 p-6 rounded-2xl border border-stone-100">
+                    <h3 class="font-bold text-lg mb-2 text-brand-dark flex items-center"><i
+                            class="fas fa-question-circle text-brand-primary mr-3"></i> O ebook é fácil de entender?
+                    </h3>
+                    <p class="text-stone-600">Totalmente. É voltado para iniciantes (ou "Zero experiência") e explica de
+                        forma muito clara.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 11: CTA FINAL -->
+    <section class="py-24 bg-brand-primaryDark text-center reveal">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="text-3xl md:text-5xl font-bold font-serif text-white mb-6 leading-tight">
+                Transforme sua cozinha em uma produção artesanal de verdade
+            </h2>
+            <p class="text-2xl text-white font-medium mb-10">Por apenas R$ 39,90</p>
+
+            <a href="https://pay.hotmart.com/Y103286666E?bid=1771977498499"
+                class="inline-block bg-white text-brand-primaryDark hover:bg-stone-100 font-bold text-xl px-8 py-5 md:px-12 md:py-6 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.2)] transform hover:-translate-y-1 transition-all">
+                Quero Começar Minha Produção Artesanal Agora
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark py-8 text-center text-stone-500 border-t border-stone-800">
+        <p>© 2026 Segredos da Feijoada Artesanal</p>
+    </footer>
+
+    <!-- Reveal Animation Script -->
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal(); // Trigger on load
+    </script>
+</body>
+
+</html>
