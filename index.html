@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEGREDOS DA FEIJOADA ARTESANAL</title>
+    <title>Segredos da Feijoada Artesanal | Ebook completo por Bruno Cavalcanti</title>
+    <meta name="description"
+        content="Aprenda a fazer feijoada artesanal com carnes, bacon, linguiça, defumação, cura, boas práticas e planilha de custos para consumo próprio ou venda.">
+    <meta property="og:title" content="Segredos da Feijoada Artesanal">
+    <meta property="og:description"
+        content="O passo a passo para produzir uma feijoada artesanal completa, mesmo sem cozinha industrial ou equipamentos caros.">
+    <meta property="og:image" content="images/feijoada.png">
 
     <!-- Meta Pixel Code -->
     <script>
@@ -33,13 +39,8 @@
     </noscript>
     <!-- End Meta Pixel Code -->
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -61,6 +62,7 @@
                             primaryDark: '#c2410c',
                             light: '#fafaf9',
                             accent: '#fbbf24',
+                            green: '#166534',
                         }
                     }
                 }
@@ -69,9 +71,16 @@
     </script>
     <style>
         .gradient-text {
-            background: linear-gradient(135deg, #ea580c 0%, #fbbf24 100%);
+            background: linear-gradient(135deg, #f97316 0%, #fbbf24 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+
+        .hero-bg {
+            background:
+                linear-gradient(90deg, rgba(28, 25, 23, 0.97) 0%, rgba(28, 25, 23, 0.88) 52%, rgba(28, 25, 23, 0.58) 100%),
+                url('images/feijoada.png') center right / contain no-repeat,
+                #1c1917;
         }
 
         .reveal {
@@ -84,312 +93,676 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .cta-shadow {
+            box-shadow: 0 16px 34px rgba(22, 101, 52, 0.28);
+        }
+
+        .paper-card {
+            background-image: linear-gradient(180deg, #fffaf0 0%, #ffffff 100%);
+        }
+
+        @media (max-width: 768px) {
+            .hero-bg {
+                background:
+                    linear-gradient(180deg, rgba(28, 25, 23, 0.96) 0%, rgba(28, 25, 23, 0.92) 100%),
+                    url('images/feijoada.png') center bottom / 88% auto no-repeat,
+                    #1c1917;
+            }
+        }
     </style>
 </head>
 
 <body class="font-sans bg-brand-light text-stone-800 antialiased selection:bg-brand-primary selection:text-white">
+    <header class="hero-bg relative overflow-hidden text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 lg:pt-24 lg:pb-28">
+            <div class="max-w-3xl">
+                <div
+                    class="inline-flex items-center gap-2 rounded-full border border-orange-300/30 bg-white/10 px-4 py-2 text-sm font-semibold text-orange-100 backdrop-blur">
+                    <i class="fas fa-fire text-brand-accent"></i>
+                    Ebook prático + planilha de custos + acesso imediato
+                </div>
 
-    <!-- BLOCO 1: HEADER -->
-    <header class="relative pt-24 pb-20 lg:pt-32 lg:pb-32 overflow-hidden bg-brand-dark text-white">
-        <div
-            class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent">
-        </div>
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <h1 class="mt-8 text-4xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight">
+                    Faça uma <span class="gradient-text">feijoada artesanal</span> com carnes, linguiça e bacon feitos por você
+                </h1>
 
-            <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold font-serif leading-tight mb-6 uppercase">
-                <span class="gradient-text">SEGREDOS DA</span> <br class="hidden md:block" /> FEIJOADA ARTESANAL
-            </h1>
+                <p class="mt-6 text-xl md:text-2xl text-stone-100 leading-relaxed">
+                    Aprenda o método de Bruno Cavalcanti para produzir uma feijoada completa, saborosa e com aparência
+                    profissional, mesmo começando em uma cozinha comum e sem equipamentos caros.
+                </p>
 
-            <p class="text-xl md:text-2xl text-stone-200 max-w-3xl mx-auto mb-6">
-                Descubra como preparar uma feijoada artesanal com sabor inconfundível <span
-                    class="text-brand-accent italic">— direto da sua cozinha</span>
-            </p>
+                <div class="mt-8 grid gap-3 sm:grid-cols-3 text-sm text-stone-200">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-brand-accent"></i>
+                        15+ anos de gastronomia
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-brand-accent"></i>
+                        Para consumo ou venda
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-brand-accent"></i>
+                        Compra segura Hotmart
+                    </div>
+                </div>
 
-            <p class="text-lg md:text-xl text-stone-400 max-w-3xl mx-auto mb-12">
-                Aprenda o passo a passo para produzir uma feijoada 100% caseira e autoral, mesmo sem equipamentos
-                profissionais.
-            </p>
+                <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                    <a href="#oferta"
+                        class="inline-flex items-center justify-center gap-3 rounded-full bg-brand-green px-8 py-5 text-lg font-bold text-white cta-shadow transition hover:-translate-y-1 hover:bg-green-700">
+                        Quero minha feijoada artesanal
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#conteudo"
+                        class="inline-flex items-center justify-center gap-3 rounded-full border border-white/25 px-8 py-5 text-lg font-semibold text-white transition hover:bg-white/10">
+                        Ver o que vou receber
+                    </a>
+                </div>
 
-
-
-            <a href="#oferta"
-                class="inline-block bg-gradient-to-r from-brand-primary to-orange-500 hover:from-orange-500 hover:to-orange-400 text-white font-bold text-lg md:text-xl px-10 py-5 rounded-full shadow-xl shadow-brand-primary/30 transform hover:-translate-y-1 transition-all">
-                Quero aprender os Segredos da Feijoada Artesanal
-            </a>
+                <p class="mt-5 text-sm text-stone-300">
+                    Acesso digital. Você recebe o material após a confirmação da compra.
+                </p>
+            </div>
         </div>
     </header>
 
-    <!-- BLOCO 2: OPORTUNIDADE -->
-    <section class="py-24 bg-white reveal">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold font-serif mb-8 text-center text-brand-dark max-w-3xl mx-auto">
-                Cozinhar uma feijoada artesanal incrível é totalmente possível — <span
-                    class="text-brand-primary italic">até em apartamento</span>
-            </h2>
-            <div class="text-lg text-stone-600 text-center max-w-4xl mx-auto space-y-6">
-                <p>Muita gente acredita que precisa de equipamentos caros, cozinha industrial ou técnicas avançadas, mas
-                    <strong>isso não é verdade</strong>.
-                </p>
-                <p>Com o método certo, <em>qualquer pessoa</em> pode criar uma feijoada marcante usando apenas a cozinha
-                    que já tem em casa.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- BLOCO 3: AUTORIDADE / DEMONSTRAÇÃO -->
-    <section class="py-24 bg-stone-50 reveal border-y border-stone-200">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <p class="text-lg text-stone-600 mb-6 font-medium">Com mais de 15 anos de experiência na gastronomia e
-                    ex-dono de 3 restaurantes, Bruno desenvolveu um processo exclusivo que permite:</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-stone-100">
-                    <i class="fas fa-fire text-3xl text-brand-primary mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Defumar carnes</h3>
-                    <p class="text-stone-600">Em cozinha residencial, sem sujeira ou complicação.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-stone-100">
-                    <i class="fas fa-hotdog text-3xl text-brand-primary mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Produzir linguiças</h3>
-                    <p class="text-stone-600">Artesanais, perfeitamente temperadas e sem máquinas profissionais.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-stone-100">
-                    <i class="fas fa-seedling text-3xl text-brand-primary mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Criar temperos</h3>
-                    <p class="text-stone-600">E bases de sabor caseiras para aquele toque autêntico.</p>
-                </div>
-                <div
-                    class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-stone-100 lg:col-start-2">
-                    <i class="fas fa-bowl-rice text-3xl text-brand-primary mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Montar feijoada autoral</h3>
-                    <p class="text-stone-600">Do zero absoluto com os acompanhamentos ideais.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-stone-100">
-                    <i class="fas fa-money-bill-wave text-3xl text-brand-primary mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Transformar em renda</h3>
-                    <p class="text-stone-600">Gerando renda extra através da venda de algo maravilhoso.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- BLOCO 4: O MÉTODO -->
-    <section class="py-24 bg-brand-dark text-white reveal">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div class="relative">
-                    <img src="images/feijoada.png" alt="O Método"
-                        class="w-full max-w-lg mx-auto drop-shadow-2xl rounded-2xl object-cover">
-
-                </div>
-                <div>
-                    <h2 class="text-3xl md:text-5xl font-bold font-serif mb-6 leading-tight">
-                        O método que transforma qualquer cozinha em um <span
-                            class="text-brand-primary italic">laboratório de sabores artesanais</span>
-                    </h2>
-                    <p class="text-xl text-stone-300 border-l-4 border-brand-primary pl-4 mb-8">Você vai aprender:</p>
-
-                    <ul class="space-y-4 text-lg">
-                        <li class="flex items-start"><i class="fas fa-check text-brand-primary mt-1 mr-4"></i> <span
-                                class="text-stone-200">Técnicas simples para defumar carnes sem defumador</span></li>
-                        <li class="flex items-start"><i class="fas fa-check text-brand-primary mt-1 mr-4"></i> <span
-                                class="text-stone-200">Como preparar linguiças artesanais</span></li>
-                        <li class="flex items-start"><i class="fas fa-check text-brand-primary mt-1 mr-4"></i> <span
-                                class="text-stone-200">Bases de sabor e temperos profissionais</span></li>
-                        <li class="flex items-start"><i class="fas fa-check text-brand-primary mt-1 mr-4"></i> <span
-                                class="text-stone-200">Montagem completa da feijoada autoral</span></li>
-                        <li class="flex items-start"><i class="fas fa-check text-brand-primary mt-1 mr-4"></i> <span
-                                class="text-stone-200">Como vender kits e gerar renda extra</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- BLOCO 6: PARA QUEM É -->
-    <section class="py-20 bg-white reveal">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold font-serif mb-12 text-brand-dark">Este material é para quem:</h2>
-            <div class="flex flex-wrap justify-center gap-4">
-                <span class="bg-stone-100 text-stone-800 px-6 py-3 rounded-full font-medium shadow-sm"><i
-                        class="fas fa-heart text-brand-primary mr-2"></i> Ama cozinhar</span>
-                <span class="bg-stone-100 text-stone-800 px-6 py-3 rounded-full font-medium shadow-sm"><i
-                        class="fas fa-store text-brand-primary mr-2"></i> Quer empreender sem sair de casa</span>
-                <span class="bg-stone-100 text-stone-800 px-6 py-3 rounded-full font-medium shadow-sm"><i
-                        class="fas fa-wallet text-brand-primary mr-2"></i> Busca renda extra</span>
-                <span class="bg-stone-100 text-stone-800 px-6 py-3 rounded-full font-medium shadow-sm"><i
-                        class="fas fa-earth-americas text-brand-primary mr-2"></i> Mora fora e sente falta da feijoada
-                    raiz</span>
-                <span class="bg-stone-100 text-stone-800 px-6 py-3 rounded-full font-medium shadow-sm"><i
-                        class="fas fa-leaf text-brand-primary mr-2"></i> Quer controlar ingredientes por
-                    restrições</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- BLOCO 9: COMPARATIVO -->
-    <section class="py-20 bg-stone-50 reveal">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-stone-200">
-                <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div class="p-8 border-b md:border-b-0 md:border-r border-stone-200">
-                        <h3 class="text-center font-bold text-stone-400 uppercase tracking-widest mb-8">Sem o Ebook</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-center text-stone-500"><i
-                                    class="fas fa-times text-red-400 mr-3 w-5"></i> Sabor industrializado</li>
-                            <li class="flex items-center text-stone-500"><i
-                                    class="fas fa-times text-red-400 mr-3 w-5"></i> Nenhuma oportunidade</li>
-                            <li class="flex items-center text-stone-500"><i
-                                    class="fas fa-times text-red-400 mr-3 w-5"></i> Conservantes e aditivos</li>
-                            <li class="flex items-center text-stone-500"><i
-                                    class="fas fa-times text-red-400 mr-3 w-5"></i> Travado sem equipamento</li>
-                        </ul>
-                    </div>
-                    <div class="p-8 bg-brand-50 relative">
-                        <div class="absolute inset-0 bg-brand-primary opacity-5"></div>
-                        <h3
-                            class="text-center font-bold text-brand-primaryDark uppercase tracking-widest mb-8 relative z-10">
-                            Com o Ebook</h3>
-                        <ul class="space-y-4 relative z-10">
-                            <li class="flex items-center text-brand-dark font-medium"><i
-                                    class="fas fa-check text-brand-primary mr-3 w-5"></i> Feijoada 100% artesanal</li>
-                            <li class="flex items-center text-brand-dark font-medium"><i
-                                    class="fas fa-check text-brand-primary mr-3 w-5"></i> Renda extra</li>
-                            <li class="flex items-center text-brand-dark font-medium"><i
-                                    class="fas fa-check text-brand-primary mr-3 w-5"></i> Controle de ingredientes</li>
-                            <li class="flex items-center text-brand-dark font-medium"><i
-                                    class="fas fa-check text-brand-primary mr-3 w-5"></i> Cozinha comum</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- BLOCO 5: OFERTA -->
-    <section id="oferta" class="py-24 bg-white scroll-mt-20 reveal">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div
-                class="border-2 border-brand-primary rounded-3xl p-8 md:p-12 text-center shadow-[0_20px_50px_rgba(234,88,12,0.1)]">
-                <h2 class="text-2xl font-bold uppercase tracking-widest text-brand-primary mb-2">O QUE VOCÊ VAI RECEBER
+    <main>
+        <section class="py-16 bg-white reveal">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p class="text-sm font-bold uppercase tracking-[0.25em] text-brand-primary">A dor principal</p>
+                <h2 class="mt-4 text-3xl md:text-5xl font-serif font-bold text-brand-dark">
+                    Você não precisa depender de ingredientes prontos para servir uma feijoada memorável
                 </h2>
-                <h3 class="text-4xl font-serif font-bold text-brand-dark mb-8">Segredos da Feijoada Artesanal</h3>
+                <p class="mt-6 text-lg md:text-xl text-stone-600 max-w-4xl mx-auto">
+                    A maioria das feijoadas fica comum porque a pessoa compra tudo pronto: bacon industrializado,
+                    linguiça sem personalidade, carnes salgadas sem controle e temperos que deixam o prato pesado. O
+                    sabor até aparece, mas não tem assinatura.
+                </p>
+            </div>
+        </section>
 
-                <div class="max-w-xl mx-auto text-left space-y-4 mb-10">
-                    <p class="flex items-center text-lg"><i class="fas fa-arrow-right text-brand-primary mr-3"></i>
-                        <span>Ebook completo com todo o passo a passo</span>
-                    </p>
-                    <p class="flex items-center text-lg"><i class="fas fa-arrow-right text-brand-primary mr-3"></i>
-                        <span>Receitas exclusivas de carnes, linguiças e temperos</span>
-                    </p>
-                    <p class="flex items-center text-lg"><i class="fas fa-arrow-right text-brand-primary mr-3"></i>
-                        <span>Técnicas profissionais adaptadas para cozinha comum</span>
-                    </p>
-                    <p
-                        class="flex items-center text-lg p-3 bg-brand-50 rounded-xl text-brand-primaryDark font-medium border border-brand-100">
-                        <i class="fas fa-star text-brand-primary mr-3"></i> <span>Bônus: Planilha de custos e
-                            vendas</span>
+        <section class="py-20 bg-stone-50 reveal border-y border-stone-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <p class="text-sm font-bold uppercase tracking-[0.25em] text-brand-primary">Quebra de crença</p>
+                        <h2 class="mt-4 text-3xl md:text-5xl font-serif font-bold text-brand-dark">
+                            O segredo não está em ter uma cozinha industrial. Está em seguir a ordem certa.
+                        </h2>
+                        <p class="mt-6 text-lg text-stone-600">
+                            Quando você entende cura, tempero, defumação simples, boas práticas e montagem final, a
+                            feijoada deixa de ser apenas um prato de domingo e vira um produto artesanal com valor
+                            percebido muito maior.
+                        </p>
+                    </div>
+                    <div class="grid gap-4">
+                        <div class="rounded-2xl bg-white p-6 border border-stone-200 shadow-sm">
+                            <h3 class="font-bold text-xl text-brand-dark">Sem o método</h3>
+                            <p class="mt-2 text-stone-600">Você testa receitas soltas, erra ponto de sal, perde tempo e
+                                fica sem saber se aquilo dá para vender.</p>
+                        </div>
+                        <div class="rounded-2xl bg-brand-dark p-6 text-white shadow-lg">
+                            <h3 class="font-bold text-xl">Com o método</h3>
+                            <p class="mt-2 text-stone-200">Você segue um passo a passo organizado para produzir,
+                                precificar e servir uma feijoada artesanal completa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white reveal">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto">
+                    <p class="text-sm font-bold uppercase tracking-[0.25em] text-brand-primary">A solução</p>
+                    <h2 class="mt-4 text-3xl md:text-5xl font-serif font-bold text-brand-dark">
+                        O Mapa da Feijoada Artesanal
+                    </h2>
+                    <p class="mt-5 text-lg text-stone-600">
+                        Um caminho prático para montar a feijoada desde os ingredientes-base até a venda, com linguagem
+                        direta para quem está começando.
                     </p>
                 </div>
 
-                <div class="mb-8">
-                    <p class="text-stone-500 line-through text-lg">Preço original: R$ 99,00</p>
-                    <p class="text-5xl font-bold text-brand-dark">R$ 67,00</p>
+                <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div class="rounded-2xl bg-stone-50 p-6 border border-stone-200">
+                        <i class="fas fa-bacon text-3xl text-brand-primary"></i>
+                        <h3 class="mt-4 font-bold text-xl">Carnes artesanais</h3>
+                        <p class="mt-2 text-stone-600">Bacon, carne seca, costela defumada e cortes suínos com sabor
+                            controlado.</p>
+                    </div>
+                    <div class="rounded-2xl bg-stone-50 p-6 border border-stone-200">
+                        <i class="fas fa-hotdog text-3xl text-brand-primary"></i>
+                        <h3 class="mt-4 font-bold text-xl">Linguiça calabresa</h3>
+                        <p class="mt-2 text-stone-600">Temperos, textura e preparo para criar uma linguiça de presença.
+                        </p>
+                    </div>
+                    <div class="rounded-2xl bg-stone-50 p-6 border border-stone-200">
+                        <i class="fas fa-smog text-3xl text-brand-primary"></i>
+                        <h3 class="mt-4 font-bold text-xl">Defumação simples</h3>
+                        <p class="mt-2 text-stone-600">Técnicas adaptadas para cozinha comum, sem depender de estrutura
+                            profissional.</p>
+                    </div>
+                    <div class="rounded-2xl bg-stone-50 p-6 border border-stone-200">
+                        <i class="fas fa-calculator text-3xl text-brand-primary"></i>
+                        <h3 class="mt-4 font-bold text-xl">Precificação</h3>
+                        <p class="mt-2 text-stone-600">Planilha para calcular custos, produção, margem e preço de venda.
+                        </p>
+                    </div>
                 </div>
 
+                <div class="mt-12 text-center">
+                    <a href="#oferta"
+                        class="inline-flex items-center justify-center gap-3 rounded-full bg-brand-green px-8 py-5 text-lg font-bold text-white cta-shadow transition hover:-translate-y-1 hover:bg-green-700">
+                        Quero aprender o passo a passo
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="conteudo" class="py-20 bg-brand-dark text-white reveal">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="images/feijoada.png" alt="Capa do ebook Segredos da Feijoada Artesanal"
+                            class="w-full max-w-lg mx-auto rounded-2xl shadow-2xl">
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold uppercase tracking-[0.25em] text-brand-accent">Conteúdo do ebook</p>
+                        <h2 class="mt-4 text-3xl md:text-5xl font-serif font-bold">
+                            Tudo organizado para você sair do improviso
+                        </h2>
+                        <div class="mt-8 grid gap-4">
+                            <p class="flex gap-3 text-lg text-stone-200"><i
+                                    class="fas fa-check text-brand-accent mt-1"></i> Receita completa da feijoada
+                                artesanal, com montagem e equilíbrio de sabor.</p>
+                            <p class="flex gap-3 text-lg text-stone-200"><i
+                                    class="fas fa-check text-brand-accent mt-1"></i> Produção de bacon artesanal,
+                                linguiça calabresa, carne seca, costela defumada e cortes suínos.</p>
+                            <p class="flex gap-3 text-lg text-stone-200"><i
+                                    class="fas fa-check text-brand-accent mt-1"></i> Fundamentos de cura, salga,
+                                defumação, conservação e boas práticas de manipulação.</p>
+                            <p class="flex gap-3 text-lg text-stone-200"><i
+                                    class="fas fa-check text-brand-accent mt-1"></i> Ideias para servir, vender, montar
+                                kits e transformar o prato em oportunidade de renda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white reveal">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <p class="text-sm font-bold uppercase tracking-[0.25em] text-brand-primary">Bônus incluso</p>
+                        <h2 class="mt-4 text-3xl md:text-5xl font-serif font-bold text-brand-dark">
+                            Planilha de Custos, Produção e Vendas
+                        </h2>
+                        <p class="mt-6 text-lg text-stone-600">
+                            Um bônus visual e prático para você não vender no escuro. Use a planilha para estimar custo
+                            real, margem, preço final e resultados da sua produção artesanal.
+                        </p>
+                        <div class="mt-8 grid sm:grid-cols-2 gap-4">
+                            <div class="flex gap-3 rounded-xl bg-stone-50 p-4 border border-stone-200">
+                                <i class="fas fa-dollar-sign text-brand-green mt-1"></i>
+                                <span>Margem de lucro e preço sugerido</span>
+                            </div>
+                            <div class="flex gap-3 rounded-xl bg-stone-50 p-4 border border-stone-200">
+                                <i class="fas fa-boxes-stacked text-brand-green mt-1"></i>
+                                <span>Controle de produção e insumos</span>
+                            </div>
+                            <div class="flex gap-3 rounded-xl bg-stone-50 p-4 border border-stone-200">
+                                <i class="fas fa-chart-line text-brand-green mt-1"></i>
+                                <span>Visão de vendas e relatórios</span>
+                            </div>
+                            <div class="flex gap-3 rounded-xl bg-stone-50 p-4 border border-stone-200">
+                                <i class="fas fa-list-check text-brand-green mt-1"></i>
+                                <span>Mais clareza para decidir</span>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/planilha-capa.png" alt="Planilha de custos, produção e vendas"
+                        class="rounded-2xl shadow-2xl border border-stone-200">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-stone-50 reveal">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <img src="images/bruno_cavalcanti.jpg" alt="Bruno Cavalcanti"
+                        class="rounded-2xl shadow-xl w-full max-w-sm mx-auto object-cover aspect-square">
+                    <div>
+                        <p class="text-sm font-bold uppercase tracking-[0.25em] text-brand-primary">Autoridade</p>
+                        <h2 class="mt-4 text-3xl md:text-5xl font-serif font-bold text-brand-dark">
+                            Bruno Cavalcanti transformou vivência real de cozinha em um passo a passo simples
+                        </h2>
+                        <p class="mt-6 text-lg text-stone-600">
+                            Bruno cozinha há mais de 15 anos, já esteve à frente de restaurantes e aprendeu na prática o
+                            que diferencia uma receita comum de um produto que as pessoas valorizam. Neste ebook, ele
+                            traduz essa experiência para uma linguagem direta, pensada para quem quer fazer bem feito em
+                            casa.
+                        </p>
+                        <div class="mt-8 grid sm:grid-cols-3 gap-4">
+                            <div class="rounded-xl bg-white p-5 border border-stone-200">
+                                <strong class="block text-2xl text-brand-primary">15+</strong>
+                                <span class="text-sm text-stone-600">anos de cozinha</span>
+                            </div>
+                            <div class="rounded-xl bg-white p-5 border border-stone-200">
+                                <strong class="block text-2xl text-brand-primary">3</strong>
+                                <span class="text-sm text-stone-600">restaurantes na trajetória</span>
+                            </div>
+                            <div class="rounded-xl bg-white p-5 border border-stone-200">
+                                <strong class="block text-2xl text-brand-primary">100%</strong>
+                                <span class="text-sm text-stone-600">foco em prática</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white reveal">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto">
+                    <p class="text-sm font-bold uppercase tracking-[0.25em] text-brand-primary">Prova social real</p>
+                    <h2 class="mt-4 text-3xl md:text-5xl font-serif font-bold text-brand-dark">
+                        Quando o processo é bem explicado, o resultado aparece na cozinha de verdade
+                    </h2>
+                    <p class="mt-5 text-lg text-stone-600">
+                        Um aluno aplicou os ensinamentos, organizou as etapas com paciência e relatou atendimento para
+                        300 pessoas satisfeitas.
+                    </p>
+                </div>
+
+                <div class="mt-12 grid lg:grid-cols-[1.2fr_0.8fr] gap-8 items-center">
+                    <div class="rounded-3xl border border-stone-200 bg-stone-50 p-4 md:p-6 shadow-xl">
+                        <img src="assets/depoimento-luizatausch.jpeg"
+                            alt="Depoimento de aluno relatando atendimento a 300 pessoas satisfeitas"
+                            class="w-full rounded-2xl border border-stone-200 bg-white">
+                    </div>
+                    <div class="rounded-3xl bg-brand-dark p-8 text-white">
+                        <i class="fas fa-quote-left text-4xl text-brand-accent"></i>
+                        <blockquote class="mt-5 text-2xl font-serif leading-snug">
+                            "Resultado com atendimento a 300 pessoas satisfeitas."
+                        </blockquote>
+                        <p class="mt-5 text-stone-300">
+                            Esse tipo de retorno mostra o ponto central da página: não é só uma receita bonita, é um
+                            processo que ajuda a organizar produção, tempo e execução.
+                        </p>
+                        <div class="mt-6 grid grid-cols-2 gap-3 text-sm">
+                            <span class="rounded-full bg-white/10 px-4 py-3 text-center">Processo organizado</span>
+                            <span class="rounded-full bg-white/10 px-4 py-3 text-center">Aplicação real</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-brand-dark text-white reveal">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto">
+                    <p class="text-sm font-bold uppercase tracking-[0.25em] text-brand-accent">Quebra de objeções</p>
+                    <h2 class="mt-4 text-3xl md:text-5xl font-serif font-bold">
+                        Feito para quem quer começar sem complicar
+                    </h2>
+                </div>
+
+                <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div class="rounded-2xl bg-white/10 p-6 border border-white/10">
+                        <h3 class="font-bold text-xl">Nunca fiz bacon ou linguiça</h3>
+                        <p class="mt-2 text-stone-300">O ebook começa pelo fundamento, sem exigir experiência prévia.
+                        </p>
+                    </div>
+                    <div class="rounded-2xl bg-white/10 p-6 border border-white/10">
+                        <h3 class="font-bold text-xl">Moro em apartamento</h3>
+                        <p class="mt-2 text-stone-300">As técnicas são adaptadas para cozinha comum e rotina real.</p>
+                    </div>
+                    <div class="rounded-2xl bg-white/10 p-6 border border-white/10">
+                        <h3 class="font-bold text-xl">Não tenho equipamento caro</h3>
+                        <p class="mt-2 text-stone-300">Você aprende alternativas acessíveis antes de pensar em investir.
+                        </p>
+                    </div>
+                    <div class="rounded-2xl bg-white/10 p-6 border border-white/10">
+                        <h3 class="font-bold text-xl">Tenho medo de errar o sal</h3>
+                        <p class="mt-2 text-stone-300">O material organiza cura, salga e proporções para reduzir
+                            tentativa e erro.</p>
+                    </div>
+                    <div class="rounded-2xl bg-white/10 p-6 border border-white/10">
+                        <h3 class="font-bold text-xl">Não quero vender agora</h3>
+                        <p class="mt-2 text-stone-300">Você pode usar só para consumo próprio e deixar a venda como
+                            próxima etapa.</p>
+                    </div>
+                    <div class="rounded-2xl bg-white/10 p-6 border border-white/10">
+                        <h3 class="font-bold text-xl">Não sei precificar</h3>
+                        <p class="mt-2 text-stone-300">A planilha bônus ajuda a transformar ingredientes em números
+                            claros.</p>
+                    </div>
+                    <div class="rounded-2xl bg-white/10 p-6 border border-white/10">
+                        <h3 class="font-bold text-xl">Tenho pouco tempo</h3>
+                        <p class="mt-2 text-stone-300">Você pode estudar por etapas e produzir em lotes menores antes de
+                            aumentar volume.</p>
+                    </div>
+                    <div class="rounded-2xl bg-white/10 p-6 border border-white/10">
+                        <h3 class="font-bold text-xl">Tenho medo de perder dinheiro</h3>
+                        <p class="mt-2 text-stone-300">A planilha existe para você enxergar custos antes de prometer ou
+                            vender.</p>
+                    </div>
+                    <div class="rounded-2xl bg-white/10 p-6 border border-white/10">
+                        <h3 class="font-bold text-xl">Não encontro todos os ingredientes</h3>
+                        <p class="mt-2 text-stone-300">O foco é entender função, sabor e substituições possíveis dentro
+                            da sua realidade.</p>
+                    </div>
+                    <div class="rounded-2xl bg-white/10 p-6 border border-white/10">
+                        <h3 class="font-bold text-xl">Tenho receio de conservação</h3>
+                        <p class="mt-2 text-stone-300">O conteúdo trata boas práticas, manipulação, cura, salga e
+                            armazenamento com clareza.</p>
+                    </div>
+                    <div class="rounded-2xl bg-white/10 p-6 border border-white/10">
+                        <h3 class="font-bold text-xl">Não tenho CNPJ</h3>
+                        <p class="mt-2 text-stone-300">Você pode começar validando a receita para consumo e pequenos
+                            testes antes de formalizar.</p>
+                    </div>
+                    <div class="rounded-2xl bg-white/10 p-6 border border-white/10">
+                        <h3 class="font-bold text-xl">Será que consigo repetir?</h3>
+                        <p class="mt-2 text-stone-300">O passo a passo e os números ajudam a transformar improviso em
+                            processo repetível.</p>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <a href="#oferta"
+                        class="inline-flex items-center justify-center gap-3 rounded-full bg-brand-green px-8 py-5 text-lg font-bold text-white cta-shadow transition hover:-translate-y-1 hover:bg-green-700">
+                        Quero começar do jeito certo
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white reveal">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="rounded-3xl bg-green-50 border border-green-200 p-8 md:p-12 text-center">
+                    <div
+                        class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-brand-green text-white text-3xl">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h2 class="mt-6 text-3xl md:text-5xl font-serif font-bold text-brand-dark">
+                        Garantia Tranquilidade Artesanal
+                    </h2>
+                    <p class="mt-5 text-lg md:text-xl text-stone-700 max-w-3xl mx-auto">
+                        Você compra pela Hotmart com segurança. Se o material não fizer sentido para você, use a garantia
+                        disponível na plataforma dentro do prazo informado no checkout.
+                    </p>
+                    <p class="mt-4 text-stone-600">
+                        A ideia é simples: você deve entrar sentindo que tem um caminho claro, não mais uma promessa
+                        solta da internet.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="oferta" class="py-24 bg-stone-50 scroll-mt-20 reveal">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="rounded-3xl border-2 border-brand-primary bg-white p-6 md:p-12 shadow-2xl">
+                    <div class="text-center">
+                        <p class="text-sm font-bold uppercase tracking-[0.25em] text-brand-primary">Oferta especial</p>
+                        <h2 class="mt-4 text-3xl md:text-5xl font-serif font-bold text-brand-dark">
+                            Segredos da Feijoada Artesanal
+                        </h2>
+                        <p class="mt-4 text-lg text-stone-600 max-w-3xl mx-auto">
+                            Para quem quer produzir uma feijoada artesanal completa, com sabor próprio, mais controle e
+                            possibilidade de transformar a receita em renda.
+                        </p>
+                    </div>
+
+                    <div class="mt-10 grid lg:grid-cols-2 gap-8 items-start">
+                        <div class="paper-card rounded-2xl border border-orange-100 p-6">
+                            <h3 class="font-bold text-2xl text-brand-dark">Você recebe hoje:</h3>
+                            <div class="mt-6 space-y-4">
+                                <p class="flex gap-3"><i class="fas fa-check text-brand-green mt-1"></i> Ebook completo
+                                    Segredos da Feijoada Artesanal <strong class="ml-auto">R$197</strong></p>
+                                <p class="flex gap-3"><i class="fas fa-check text-brand-green mt-1"></i> Receitas e
+                                    técnicas de carnes artesanais <strong class="ml-auto">R$97</strong></p>
+                                <p class="flex gap-3"><i class="fas fa-check text-brand-green mt-1"></i> Guia de
+                                    defumação, cura e boas práticas <strong class="ml-auto">R$87</strong></p>
+                                <p class="flex gap-3"><i class="fas fa-check text-brand-green mt-1"></i> Planilha de
+                                    custos, produção e vendas <strong class="ml-auto">R$91</strong></p>
+                            </div>
+                            <div class="mt-6 border-t border-orange-200 pt-5 flex justify-between text-lg">
+                                <span>Valor percebido total</span>
+                                <strong>R$472</strong>
+                            </div>
+                        </div>
+
+                        <div class="rounded-2xl bg-brand-dark p-6 md:p-8 text-white">
+                            <p class="text-stone-300 line-through text-lg">De R$97</p>
+                            <p class="mt-2 text-stone-200">Hoje por apenas</p>
+                            <p class="mt-1 text-6xl font-bold text-brand-accent">R$67</p>
+                            <p class="mt-3 text-stone-300">Pagamento seguro pela Hotmart. Acesso digital após a compra.
+                            </p>
+
+                            <a href="oferta-combo.html?produto=feijoada"
+                                class="mt-8 inline-flex w-full items-center justify-center gap-3 rounded-full bg-brand-green px-8 py-5 text-lg md:text-xl font-bold text-white cta-shadow transition hover:-translate-y-1 hover:bg-green-700">
+                                Sim, quero garantir meu acesso
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                            <div class="mt-5 grid grid-cols-3 gap-3 text-center text-xs text-stone-300">
+                                <span><i class="fas fa-lock block text-brand-accent mb-1"></i>Compra segura</span>
+                                <span><i class="fas fa-bolt block text-brand-accent mb-1"></i>Acesso rápido</span>
+                                <span><i class="fas fa-shield block text-brand-accent mb-1"></i>Garantia Hotmart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white reveal">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <p class="text-sm font-bold uppercase tracking-[0.25em] text-brand-primary">FAQ</p>
+                    <h2 class="mt-4 text-3xl md:text-5xl font-serif font-bold text-brand-dark">
+                        Perguntas frequentes
+                    </h2>
+                </div>
+
+                <div class="mt-12 grid gap-4">
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5" open>
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Funciona para iniciantes?</summary>
+                        <p class="mt-3 text-stone-600">Sim. A página foi pensada para quem quer começar com orientação,
+                            sem depender de experiência profissional.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Preciso de cozinha industrial?
+                        </summary>
+                        <p class="mt-3 text-stone-600">Não. A proposta é adaptar técnicas artesanais para uma cozinha
+                            comum.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Preciso comprar equipamento
+                            caro?</summary>
+                        <p class="mt-3 text-stone-600">Não para começar. O ebook mostra alternativas acessíveis e evita
+                            que você invista sem necessidade.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Posso fazer em apartamento?
+                        </summary>
+                        <p class="mt-3 text-stone-600">Sim, respeitando ventilação, limpeza e bom senso na execução das
+                            técnicas.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">O ebook ensina a vender?</summary>
+                        <p class="mt-3 text-stone-600">Ele traz uma visão prática de custos, precificação, produção e
+                            possibilidades de venda, com a planilha como apoio.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Serve se eu quiser apenas fazer
+                            para família?</summary>
+                        <p class="mt-3 text-stone-600">Serve sim. A parte de venda é uma possibilidade, não uma obrigação.
+                        </p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Como recebo o acesso?</summary>
+                        <p class="mt-3 text-stone-600">Após a compra pela Hotmart, você recebe as instruções de acesso
+                            digital pelo e-mail cadastrado.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Tem garantia?</summary>
+                        <p class="mt-3 text-stone-600">A compra é processada pela Hotmart e segue a garantia informada no
+                            checkout.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">O material fala de conservação e
+                            segurança?</summary>
+                        <p class="mt-3 text-stone-600">Sim. Boas práticas, conservação, cura, salga e manipulação fazem
+                            parte do conteúdo.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Vou conseguir calcular meu preço?
+                        </summary>
+                        <p class="mt-3 text-stone-600">A planilha bônus ajuda você a organizar custos, margem e preço de
+                            venda de forma mais objetiva.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">O ebook ensina bacon artesanal?
+                        </summary>
+                        <p class="mt-3 text-stone-600">Sim. O conteúdo aborda bacon artesanal dentro da estrutura da
+                            feijoada.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">O ebook ensina linguiça
+                            calabresa?</summary>
+                        <p class="mt-3 text-stone-600">Sim. A proposta inclui produção artesanal de linguiça para
+                            compor a feijoada.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Tem carne seca e costela
+                            defumada?</summary>
+                        <p class="mt-3 text-stone-600">Sim. Esses itens fazem parte da promessa central do material.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Preciso saber defumar?</summary>
+                        <p class="mt-3 text-stone-600">Não. O ebook apresenta a lógica da defumação de forma guiada.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Posso vender kits de feijoada?
+                        </summary>
+                        <p class="mt-3 text-stone-600">Sim, desde que você respeite boas práticas, regras locais e
+                            organize custo e produção.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">O conteúdo é em vídeo?</summary>
+                        <p class="mt-3 text-stone-600">A oferta principal é um ebook digital com planilha bônus.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Recebo a planilha junto?</summary>
+                        <p class="mt-3 text-stone-600">Sim. A planilha é apresentada como bônus da oferta.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Posso acessar pelo celular?
+                        </summary>
+                        <p class="mt-3 text-stone-600">Sim. Por ser digital, você pode acessar em dispositivos
+                            compatíveis com arquivos digitais.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Tenho que comprar outro curso
+                            depois?</summary>
+                        <p class="mt-3 text-stone-600">Não. Esta página vende o ebook da feijoada. Após clicar, você
+                            pode ver uma oferta de combo, mas a decisão é sua.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">O botão abre direto o checkout?
+                        </summary>
+                        <p class="mt-3 text-stone-600">O botão leva para uma página intermediária onde você escolhe entre
+                            seguir com o ebook ou aproveitar o combo completo.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Preciso fazer grande quantidade?
+                        </summary>
+                        <p class="mt-3 text-stone-600">Não. Você pode começar com testes pequenos e aumentar conforme
+                            ganha segurança.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Serve para quem mora fora do
+                            Brasil?</summary>
+                        <p class="mt-3 text-stone-600">Serve especialmente para quem sente falta de uma feijoada com
+                            sabor brasileiro e quer adaptar a produção à realidade local.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Consigo usar para festas e
+                            encomendas?</summary>
+                        <p class="mt-3 text-stone-600">Sim. O material ajuda a estruturar produção, desde que você
+                            organize volume, prazo e conservação.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">O ebook fala de boas práticas?
+                        </summary>
+                        <p class="mt-3 text-stone-600">Sim. Segurança, manipulação e conservação são tratadas como parte
+                            importante do processo.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">E se eu não souber cozinhar
+                            bem?</summary>
+                        <p class="mt-3 text-stone-600">O material foi escrito para simplificar o caminho, mas você ainda
+                            precisa executar com atenção e prática.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Posso imprimir o material?
+                        </summary>
+                        <p class="mt-3 text-stone-600">Você pode usar o arquivo digital como referência e imprimir para
+                            uso pessoal se o formato recebido permitir.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Quanto tempo demora para ver
+                            resultado?</summary>
+                        <p class="mt-3 text-stone-600">Depende do seu ritmo de estudo e prática. A proposta é encurtar o
+                            caminho, não prometer resultado instantâneo sem execução.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Posso adaptar temperos?</summary>
+                        <p class="mt-3 text-stone-600">Sim. Depois de entender a base, você pode ajustar assinatura de
+                            sabor ao seu público ou família.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">Tem suporte?</summary>
+                        <p class="mt-3 text-stone-600">Consulte as informações da oferta e do produto na Hotmart para
+                            ver os canais disponíveis.</p>
+                    </details>
+                    <details class="rounded-2xl border border-stone-200 bg-stone-50 p-5">
+                        <summary class="cursor-pointer font-bold text-lg text-brand-dark">A compra é segura?</summary>
+                        <p class="mt-3 text-stone-600">Sim. O pagamento é feito pela Hotmart, plataforma usada para venda
+                            de produtos digitais.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-brand-primaryDark text-center reveal">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-white leading-tight">
+                    Sua próxima feijoada pode ter assinatura artesanal, controle de custo e muito mais valor percebido.
+                </h2>
+                <p class="mt-6 text-2xl text-white font-semibold">Comece hoje por R$67.</p>
                 <a href="oferta-combo.html?produto=feijoada"
-                    class="inline-block w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white font-bold text-2xl px-12 py-5 rounded-full shadow-[0_10px_25px_rgba(34,197,94,0.3)] transform hover:scale-105 transition-transform mb-4">
-                    Quero garantir meu acesso
+                    class="mt-10 inline-flex items-center justify-center gap-3 rounded-full bg-white px-8 py-5 text-lg md:text-xl font-bold text-brand-primaryDark shadow-xl transition hover:-translate-y-1 hover:bg-stone-100">
+                    Quero acessar o Segredos da Feijoada
+                    <i class="fas fa-arrow-right"></i>
                 </a>
-                <p class="text-sm text-stone-400"><i class="fas fa-lock mr-1 text-xs"></i> Compra Segura e Garantida</p>
+                <p class="mt-5 text-sm text-orange-100">
+                    Compra segura. Acesso digital. Oferta processada pela Hotmart.
+                </p>
             </div>
-        </div>
-    </section>
-
-    <!-- BLOCO 10: SOBRE O AUTOR -->
-    <section class="py-24 bg-brand-dark text-white reveal border-t border-stone-800">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
-            <img src="images/bruno_cavalcanti.jpg" alt="Bruno"
-                class="rounded-2xl shadow-xl w-full max-w-sm mx-auto object-cover aspect-square">
-
-            <div>
-                <span class="text-brand-primary text-sm font-bold uppercase tracking-widest mb-2 block">SOBRE O
-                    AUTOR</span>
-                <h2 class="text-4xl font-serif font-bold mb-6">Bruno</h2>
-                <h3 class="text-xl text-brand-accent mb-6 font-medium">Gastronomia prática e saborosa</h3>
-                <p class="text-stone-300 mb-4 text-lg">Cozinheiro há mais de 15 anos, ex-dono de 3 restaurantes e
-                    criador de cardápios completos.</p>
-                <p class="text-stone-300 text-lg">Hoje ensina receitas práticas nas redes sociais com uma abordagem
-                    simples e acessível.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- BLOCO 7 & 8: OBJEÇÕES E FAQ -->
-    <section class="py-24 bg-white reveal">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold font-serif text-center mb-12 text-brand-dark">Dúvidas Frequentes
-            </h2>
-
-            <div class="space-y-6">
-                <div class="bg-stone-50 p-6 rounded-2xl border border-stone-100">
-                    <h3 class="font-bold text-lg mb-2 text-brand-dark flex items-center"><i
-                            class="fas fa-question-circle text-brand-primary mr-3"></i> O método funciona em
-                        apartamento?</h3>
-                    <p class="text-stone-600">Sim. O método foi testado e validado em cozinha residencial.</p>
-                </div>
-                <div class="bg-stone-50 p-6 rounded-2xl border border-stone-100">
-                    <h3 class="font-bold text-lg mb-2 text-brand-dark flex items-center"><i
-                            class="fas fa-question-circle text-brand-primary mr-3"></i> Preciso de equipamentos caros?
-                    </h3>
-                    <p class="text-stone-600">Não. Você aprenderá alternativas totalmente acessíveis usando o que já
-                        tem.</p>
-                </div>
-                <div class="bg-stone-50 p-6 rounded-2xl border border-stone-100">
-                    <h3 class="font-bold text-lg mb-2 text-brand-dark flex items-center"><i
-                            class="fas fa-question-circle text-brand-primary mr-3"></i> Os produtos são saudáveis?</h3>
-                    <p class="text-stone-600">Sim. Você tem controle total: sem conservantes ou aditivos químicos.</p>
-                </div>
-                <div class="bg-stone-50 p-6 rounded-2xl border border-stone-100">
-                    <h3 class="font-bold text-lg mb-2 text-brand-dark flex items-center"><i
-                            class="fas fa-question-circle text-brand-primary mr-3"></i> Dá para ganhar dinheiro com
-                        isso?</h3>
-                    <p class="text-stone-600">Sim, kits de feijoada artesanal têm enorme demanda. E você pode começar
-                        sem CNPJ de forma informal.</p>
-                </div>
-                <div class="bg-stone-50 p-6 rounded-2xl border border-stone-100">
-                    <h3 class="font-bold text-lg mb-2 text-brand-dark flex items-center"><i
-                            class="fas fa-question-circle text-brand-primary mr-3"></i> O ebook é fácil de entender?
-                    </h3>
-                    <p class="text-stone-600">Totalmente. É voltado para iniciantes (ou "Zero experiência") e explica de
-                        forma muito clara.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- BLOCO 11: CTA FINAL -->
-    <section class="py-24 bg-brand-primaryDark text-center reveal">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <h2 class="text-3xl md:text-5xl font-bold font-serif text-white mb-6 leading-tight">
-                Transforme sua cozinha em uma produção artesanal de verdade
-            </h2>
-            <p class="text-2xl text-white font-medium mb-10">Por apenas R$ 67,00</p>
-
-            <a href="oferta-combo.html?produto=feijoada"
-                class="inline-block bg-white text-brand-primaryDark hover:bg-stone-100 font-bold text-xl px-8 py-5 md:px-12 md:py-6 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.2)] transform hover:-translate-y-1 transition-all">
-                Quero Começar Minha Produção Artesanal Agora
-            </a>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="bg-brand-dark py-8 text-center text-stone-500 border-t border-stone-800">
-        <p>© 2026 Segredos da Feijoada Artesanal</p>
+        <p>© 2026 Segredos da Feijoada Artesanal · Bruno Cavalcanti</p>
     </footer>
 
-    <!-- Reveal Animation Script -->
     <script>
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
@@ -403,7 +776,7 @@
             }
         }
         window.addEventListener("scroll", reveal);
-        reveal(); // Trigger on load
+        reveal();
     </script>
 </body>
 
